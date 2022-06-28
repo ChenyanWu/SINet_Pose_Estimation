@@ -1,0 +1,94 @@
+{
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+        },
+        {
+        "before": ["j", "k"],
+        "after": ["<Right>"]
+        },
+        {
+        "before": ["k", "j"],
+        "after": ["<Left>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["\"", "_" , "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+        },
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+        "before": ["z", "j"],
+        "after": ["z", "b"]
+        },
+        {
+        "before": ["z", "k"],
+        "after": ["z", "t"]
+        },
+        {
+        "before": ["G"],
+        "after": ["G", "z", "b"]
+        },
+        {
+        "before": ["<C-j>"],
+        "after": ["1", "0", "j", "z", "z"]
+        },
+        {
+        "before": ["<C-k>"],
+        "after": ["1", "0", "k", "z", "z"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-w>": false,
+    },
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+        "before": ["<leader>", "d"],
+        "after": ["\"", "_" , "d"]
+        },
+        {
+        "before": ["G"],
+        "after": ["G", "z", "b"]
+        },
+        {
+        "before": ["<leader>", "p"],
+        "after": ["\"", "_", "d", "P"]
+        }
+    ],
+}
